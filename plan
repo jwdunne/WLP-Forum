@@ -1,0 +1,70 @@
+* Forum
+
+** Data Model
+
+The forum has the following types of objects:
+  - Users ./
+  - Thread ./
+  - Posts ./ 
+  - Categories ./
+  - Reputation ./ 
+  - Profiles ./
+
+Categories -
+  Have an id
+  Have a title
+  Have an optional parent id (subcategories)
+
+  Rels:
+    Categories have many threads
+
+Users -
+  Have an id
+  Have a facebook id
+  Have a name
+  Have a profile <- rel
+  Have a reputation <- rel    
+
+Profiles - ;; Consider making this a meta table with key and value
+  Have an id
+  Have a user id
+  Have a name
+  Have a description
+  Have a favourite language
+  Have an operating system
+  Have a favourite IDE
+
+  Notes:
+    This will need to be pretty extensible.
+
+Reputation -
+  Has an id
+  Has a giver <- User ID
+  Has a receiver <- User ID
+  Has weight (calculated from the giver)
+  Positive
+
+Threads -
+  Have an id
+  Have a name
+  Have posts
+  Can be locked
+  Can be deleted
+  Can be pinned
+  
+  Rels:
+    Has a category  
+
+Posts -
+  Have an id
+  Have content
+  Can be deleted
+
+* Todo List
+** TODO Implement the data schema based on the design above
+** TODO Create a way to access the database easily
+** TODO Create the model classes
+** TODO Create a way to load the classes (cleanly)
+** TODO Create a clean way to get data from HTTP requests
+** TODO Implement URI routing
+** TODO Implement a way to easily specify URI rules
