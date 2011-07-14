@@ -1,0 +1,41 @@
+<rss xmlns:yweather="http://xml.weather.yahoo.com/ns/rss/1.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" version="2.0">
+<channel>
+	<title>Yahoo! Weather - Beaverton, OR</title>
+	<link>
+		http://us.rd.yahoo.com/dailynews/rss/weather/Beaverton__OR/*http://weather.yahoo.com/forecast/USOR0030_f.html
+	</link>
+	<description>Yahoo! Weather for Beaverton, OR</description>
+	<language>en-us</language>
+	<lastBuildDate>Sat, 09 Jul 2011 11:53 am PDT</lastBuildDate>
+	<ttl>60</ttl>
+	<yweather:location city="Beaverton" region="OR" country="US"/>
+	<yweather:units temperature="F" distance="mi" pressure="in" speed="mph"/>
+	<yweather:wind chill="67" direction="0" speed="3"/>
+	<yweather:atmosphere humidity="51" visibility="10" pressure="30" rising="0"/>
+	<yweather:astronomy sunrise="5:31 am" sunset="8:59 pm"/>
+	<image>
+		<title>Yahoo! Weather</title>
+		<width>142</width>
+		<height>18</height>
+		<link>http://weather.yahoo.com</link>
+		<url>http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif</url>
+	</image>
+	<item>
+		<title>Conditions for Beaverton, OR at 11:53 am PDT</title>
+		<geo:lat>45.48</geo:lat>
+		<geo:long>-122.82</geo:long>
+		<link>http://us.rd.yahoo.com/dailynews/rss/weather/Beaverton__OR/*http://weather.yahoo.com/forecast/USOR0030_f.html</link>
+		<pubDate>Sat, 09 Jul 2011 11:53 am PDT</pubDate>
+		<yweather:condition text="Fair" code="34" temp="67" date="Sat, 09 Jul 2011 11:53 am PDT"/>
+		<description>
+			<![CDATA[
+				<img src="http://l.yimg.com/a/i/us/we/52/34.gif"/><br /> <b>Current Conditions:</b><br /> Fair, 67 F<BR /> <BR /><b>Forecast:</b><BR /> Sat - Sunny. High: 77 Low: 52<br /> Sun - Partly Cloudy. High: 79 Low: 55<br /> <br /> <a href="http://us.rd.yahoo.com/dailynews/rss/weather/Beaverton__OR/*http://weather.yahoo.com/forecast/USOR0030_f.html">Full Forecast at Yahoo! Weather</a><BR/><BR/> (provided by <a href="http://www.weather.com" >The Weather Channel</a>)<br/>
+			]]>
+		</description>
+		<yweather:forecast day="Sat" date="9 Jul 2011" low="52" high="77" text="Sunny" code="32"/>
+		<yweather:forecast day="Sun" date="10 Jul 2011" low="55" high="79" text="Partly Cloudy" code="30"/>
+		<guid isPermaLink="false">USOR0030_2011_07_09_11_53_PDT</guid>
+	</item>
+</channel>
+</rss>
+<!--api8.weather.ac4.yahoo.com compressed/chunked Sat Jul 9 13:00:31 PDT 2011-->
